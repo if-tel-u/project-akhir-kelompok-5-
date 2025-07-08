@@ -11,9 +11,6 @@ import '../widgets/member_list_widget.dart';
 import '../widgets/thread_drawer_widget.dart';
 import '../widgets/message_item_widget.dart';
 import '../widgets/thread_dialogs.dart';
-import '../../../data/models/thread_model.dart';
-import '../../../data/models/thread_member_model.dart';
-import '../../../data/models/message_model.dart';
 
 class ThreadScreen extends StatefulWidget {
   const ThreadScreen({super.key});

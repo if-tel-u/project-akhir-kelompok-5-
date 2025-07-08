@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -154,7 +154,7 @@ class SplashScreen extends StatelessWidget {
 class TaskVerseLogo extends StatelessWidget {
   final double size;
   
-  const TaskVerseLogo({Key? key, this.size = 200}) : super(key: key);
+  const TaskVerseLogo({super.key, this.size = 200});
 
   @override
   Widget build(BuildContext context) {
@@ -207,7 +207,7 @@ class TaskVerseLogoPainter extends CustomPainter {
 
 // Animated Splash Screen Version
 class AnimatedSplashScreen extends StatefulWidget {
-  const AnimatedSplashScreen({Key? key}) : super(key: key);
+  const AnimatedSplashScreen({super.key});
 
   @override
   State<AnimatedSplashScreen> createState() => _AnimatedSplashScreenState();

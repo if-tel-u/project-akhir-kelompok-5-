@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../../config/themes/app_colors.dart';
-import '../../../data/models/task_model.dart';
 import '../providers/task_provider.dart';
 import '../../../shared/widgets/empty_state_widget.dart';
 

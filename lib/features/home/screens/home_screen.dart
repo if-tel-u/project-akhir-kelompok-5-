@@ -9,7 +9,6 @@ import '../../../core/utils/responsive_utils.dart';
 import '../providers/home_provider.dart';
 import '../../taskroom/providers/task_provider.dart';
 import '../../../providers/loading_state_provider.dart';
-import '../../../core/utils/logger.dart';
 import '../../../core/utils/personalization_helper.dart';
 
 class HomeScreen extends StatefulWidget {

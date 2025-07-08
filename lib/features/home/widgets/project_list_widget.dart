@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter/animation.dart'
-    show CurvedAnimation, AnimationController;
-import 'package:flutter/scheduler.dart' show TickerProvider;
 import '../../../config/themes/app_colors.dart';
 import '../../../config/themes/app_text_styles.dart';
 import '../../../data/models/user_model.dart';
-import '../../../providers/loading_state_provider.dart';
 import '../../taskroom/providers/project_provider.dart';
 import '../../../core/utils/personalization_helper.dart';
 
@@ -164,13 +160,13 @@ class _ProjectListWidgetState extends State<ProjectListWidget>
                         mainAxisAlignment: MainAxisAlignment.center,
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          const SizedBox(
+                          SizedBox(
                             height: 20,
                             width: 20,
                             child: CircularProgressIndicator(strokeWidth: 2.0),
                           ),
-                          const SizedBox(height: 6),
-                          const Text(
+                          SizedBox(height: 6),
+                          Text(
                             'Loading projects...',
                             style: TextStyle(fontSize: 12),
                           ),

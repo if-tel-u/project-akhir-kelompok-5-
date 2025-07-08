@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../../../config/themes/app_colors.dart';
-import '../../../config/themes/app_text_styles.dart';
 import '../providers/task_provider.dart';
 import '../widgets/daily_task_list.dart';
 import '../widgets/deadline_task_list.dart';

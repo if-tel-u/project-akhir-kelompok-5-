@@ -19,7 +19,6 @@ import '../../../core/utils/personalization_helper.dart';
 import 'priority_tasks_widget.dart';
 // Import aliases to resolve TaskPriority conflict
 import '../../../data/models/task_model.dart' as task_model;
-import '../../../data/models/project_task_model.dart' as project_task_model;
 
 class ReminderWidget extends StatefulWidget {
   const ReminderWidget({super.key});
@@ -127,7 +126,7 @@ class _ReminderWidgetState extends State<ReminderWidget> {
                       ...todayDeadlines
                           .take(2)
                           .map((task) => _buildDeadlineItem(task))
-                          .toList(),
+                          ,
                       if (todayDeadlines.length > 2) ...[
                         const SizedBox(height: 8),
                         GestureDetector(

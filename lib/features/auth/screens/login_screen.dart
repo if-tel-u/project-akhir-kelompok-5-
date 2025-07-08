@@ -4,7 +4,7 @@ import '../../../features/auth/providers/auth_provider.dart';
 import '../../../shared/widgets/custom_app_bar.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();

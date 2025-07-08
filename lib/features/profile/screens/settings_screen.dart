@@ -8,7 +8,7 @@ import '../../auth/providers/auth_provider.dart';
 import '../../taskroom/providers/project_provider.dart';
 
 class SettingsScreen extends StatefulWidget {
-  const SettingsScreen({Key? key}) : super(key: key);
+  const SettingsScreen({super.key});
 
   @override
   State<SettingsScreen> createState() => _SettingsScreenState();
@@ -18,7 +18,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   final _formKey = GlobalKey<FormState>();
   late TextEditingController _nameController;
   bool _isDarkMode = false;
-  Map<String, bool> _projectNotifPrefs = {};
+  final Map<String, bool> _projectNotifPrefs = {};
 
   @override
   void initState() {

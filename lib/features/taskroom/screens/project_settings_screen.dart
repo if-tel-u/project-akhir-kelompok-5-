@@ -14,8 +14,7 @@ import '../../taskroom/helpers/thread_integration_help.dart';
 class ProjectSettingsScreen extends StatefulWidget {
   final String projectId;
 
-  const ProjectSettingsScreen({Key? key, required this.projectId})
-    : super(key: key);
+  const ProjectSettingsScreen({super.key, required this.projectId});
 
   @override
   State<ProjectSettingsScreen> createState() => _ProjectSettingsScreenState();

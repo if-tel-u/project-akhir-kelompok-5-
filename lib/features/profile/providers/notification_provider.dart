@@ -55,8 +55,7 @@ class NotificationProvider with ChangeNotifier {
       _error = null;
       notifyListeners();
       final response = await _apiClient.get(
-        notificationsEndpoint +
-            '?user_id=${UserModel.currentUser.id}${unreadOnly ? "&unread_only=1" : ""}',
+        '$notificationsEndpoint?user_id=${UserModel.currentUser.id}${unreadOnly ? "&unread_only=1" : ""}',
       );
 
       if (response['status'] == 'success') {

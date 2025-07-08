@@ -8,7 +8,7 @@ import '../../../core/utils/personalization_helper.dart';
 import '../../taskroom/providers/task_provider.dart';
 
 class PriorityTasksWidget extends StatelessWidget {
-  const PriorityTasksWidget({Key? key}) : super(key: key);
+  const PriorityTasksWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

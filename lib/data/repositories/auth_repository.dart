@@ -77,7 +77,7 @@ class AuthRepository {
     String? avatarUrl,
   }) async {
     try {
-      final response = await _apiClient.put(usersEndpoint + '/$userId', {
+      final response = await _apiClient.put('$usersEndpoint/$userId', {
         'name': name,
         'avatar_url': avatarUrl,
       });
@@ -94,7 +94,7 @@ class AuthRepository {
 
   Future<bool> deleteAccount(String userId) async {
     try {
-      final response = await _apiClient.delete(usersEndpoint + '/$userId', {});
+      final response = await _apiClient.delete('$usersEndpoint/$userId', {});
 
       if (response['status'] == 'success') {
         final prefs = await SharedPreferences.getInstance();

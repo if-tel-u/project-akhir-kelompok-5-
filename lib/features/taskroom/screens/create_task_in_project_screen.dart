@@ -11,7 +11,7 @@ import '../widgets/assignee_selector_widget.dart';
 import '../../../shared/widgets/empty_state_widget.dart';
 
 class CreateTaskInProjectScreen extends StatefulWidget {
-  const CreateTaskInProjectScreen({Key? key}) : super(key: key);
+  const CreateTaskInProjectScreen({super.key});
 
   @override
   _CreateTaskInProjectScreenState createState() =>

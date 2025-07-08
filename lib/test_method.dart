@@ -1,5 +1,4 @@
 // This is a test file to validate that methods exist
-import 'package:flutter/material.dart';
 import 'features/taskroom/providers/project_provider.dart';
 import 'features/thread/providers/thread_provider.dart';
 
